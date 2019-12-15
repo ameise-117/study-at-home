@@ -1,0 +1,24 @@
+doctype html
+html(prefix="og: http://ogp.me/ns#", lang="ja")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width,initial-scale=1")
+        meta(name="keywords", content="")
+        meta(name="description", content="")
+        meta(property="og:title", content="")
+        meta(property="og:url", content="")
+        meta(property="og:type", content="website")
+        meta(property="og:description", content="")
+        //- meta(property="og:image", content="img/common/ogp.png")
+        //- link(rel="shortcut icon", type="image/x-icon", href="img/icon/xxx.ico")
+        //- link(rel="apple-touch-icon", type="image/png", href="img/icon/xxx.png")
+        link(rel="stylesheet", href="style.css")
+        script(type="text/javascript", src="/js/script.js", charset="utf-8")
+        block title
+          title title
+    body
+        .wrap
+            block header
+            main.main
+                block content
+            include ../partial/_globalfooter
